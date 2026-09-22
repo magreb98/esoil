@@ -1,0 +1,83 @@
+{
+  "_source": "Annexes 4-9 du mémoire GWETH [À CONFIRMER : pages non disponibles dans le dépôt]. Bandes génériques d'appréciation agronomique utilisées à titre PROVISOIRE en attendant la transcription exacte des annexes. N'entre jamais dans le calcul d'aptitude (§4.4) — sert uniquement à la vue « diagnostic pédologique ».",
+  "verificationStatus": "provisoire_generique",
+  "phWater": {
+    "unit": "-",
+    "bands": [
+      { "max": 4.5, "appreciation": "Très fortement acide" },
+      { "max": 5.5, "appreciation": "Fortement acide" },
+      { "max": 6.5, "appreciation": "Modérément acide" },
+      { "max": 7.3, "appreciation": "Neutre" },
+      { "max": 8.5, "appreciation": "Modérément alcalin" },
+      { "max": 999, "appreciation": "Fortement alcalin" }
+    ]
+  },
+  "organicCarbonPct": {
+    "unit": "%",
+    "bands": [
+      { "max": 0.6, "appreciation": "Très faible" },
+      { "max": 1.2, "appreciation": "Faible" },
+      { "max": 2.0, "appreciation": "Moyen" },
+      { "max": 3.5, "appreciation": "Élevé" },
+      { "max": 999, "appreciation": "Très élevé" }
+    ]
+  },
+  "cnRatio": {
+    "unit": "-",
+    "bands": [
+      { "max": 8, "appreciation": "Minéralisation rapide (MO peu stable)" },
+      { "max": 12, "appreciation": "Normal, bonne activité biologique" },
+      { "max": 15, "appreciation": "Minéralisation lente" },
+      { "max": 999, "appreciation": "Très lente, MO mal décomposée" }
+    ]
+  },
+  "totalNitrogenPct": {
+    "unit": "%",
+    "bands": [
+      { "max": 0.1, "appreciation": "Très faible" },
+      { "max": 0.15, "appreciation": "Faible" },
+      { "max": 0.25, "appreciation": "Moyen" },
+      { "max": 999, "appreciation": "Élevé" }
+    ]
+  },
+  "exchangeableBasesCmolKg": {
+    "unit": "cmol(+)/kg",
+    "notes": "Ca échangeable, à titre indicatif",
+    "bands": [
+      { "max": 2, "appreciation": "Très faible" },
+      { "max": 5, "appreciation": "Faible" },
+      { "max": 10, "appreciation": "Moyen" },
+      { "max": 999, "appreciation": "Élevé" }
+    ]
+  },
+  "assimilablePBrayIIppm": {
+    "unit": "ppm",
+    "bands": [
+      { "max": 5, "appreciation": "Très faible" },
+      { "max": 10, "appreciation": "Faible" },
+      { "max": 20, "appreciation": "Moyen" },
+      { "max": 999, "appreciation": "Élevé" }
+    ]
+  },
+  "organicMatterPct": {
+    "unit": "%",
+    "formula": "MO = CO x 1.724",
+    "bands": [
+      { "max": 1, "appreciation": "Très faible" },
+      { "max": 2, "appreciation": "Faible" },
+      { "max": 3.5, "appreciation": "Moyen" },
+      { "max": 999, "appreciation": "Élevé" }
+    ]
+  },
+  "baseSaturationPct": {
+    "unit": "%",
+    "formula": "V = SBE / CEC x 100",
+    "bands": [
+      { "max": 20, "appreciation": "Très désaturé" },
+      { "max": 40, "appreciation": "Désaturé" },
+      { "max": 60, "appreciation": "Moyennement saturé" },
+      { "max": 80, "appreciation": "Saturé" },
+      { "max": 999, "appreciation": "Très saturé" }
+    ]
+  }
+}

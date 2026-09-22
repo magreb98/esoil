@@ -1,0 +1,855 @@
+{
+  "code": "oil_palm",
+  "name": "Palmier à huile",
+  "scientificName": "Elaeis guineensis",
+  "lifecycle": "perenne",
+  "rootingDepthCm": null,
+  "correctionFactorGroup": "autres_cultures",
+  "source": "GWETH (2024), annexes 12 et 13 (adaptées de Sys et al., 1993)",
+  "verificationStatus": "transcrit_non_verifie",
+  "climateRequirements": [
+    {
+      "code": "precip_annuelle",
+      "label": "Précipitations annuelles",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            2000,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            1700,
+            2000
+          ]
+        ],
+        "S2": [
+          [
+            1450,
+            1700
+          ]
+        ],
+        "S3": [
+          [
+            1250,
+            1450
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            1250
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 12",
+      "confidence": "haute",
+      "unit": "mm",
+      "climateGroup": "eau",
+      "note": "Vérifié : 1890,93 mm donne 91,36, comme dans le tableau du mémoire."
+    },
+    {
+      "code": "mois_secs",
+      "label": "Durée de la saison sèche (mois P < ½ETP)",
+      "category": "c",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            2
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            3
+          ]
+        ],
+        "S3": [
+          [
+            3,
+            4
+          ]
+        ],
+        "N2": [
+          [
+            4,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 12",
+      "confidence": "haute",
+      "unit": "mois",
+      "climateGroup": "eau",
+      "note": "Vérifié : 3 mois donne 60 (borne S2/S3), comme dans le mémoire."
+    },
+    {
+      "code": "t_moy_annuelle",
+      "label": "Température moyenne annuelle",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            29,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            27,
+            29
+          ]
+        ],
+        "S2": [
+          [
+            24,
+            27
+          ]
+        ],
+        "S3": [
+          [
+            22,
+            24
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            22
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 12",
+      "confidence": "faible",
+      "unit": "°C",
+      "climateGroup": "temperature",
+      "note": "Libellé douteux : des seuils de 29 °C pour l'optimum correspondent plutôt à une température MAXIMALE moyenne annuelle. Cela expliquerait que le mémoire note Tmax 32,43 °C en S1-0 (100). À confirmer avec Sys et al. (1993)."
+    },
+    {
+      "code": "t_min_abs_mois_froid",
+      "label": "Température minimale absolue du mois le plus froid",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            20,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            18,
+            20
+          ]
+        ],
+        "S2": [
+          [
+            16,
+            18
+          ]
+        ],
+        "S3": [
+          [
+            14,
+            16
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            14
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 12",
+      "confidence": "haute",
+      "unit": "°C",
+      "climateGroup": "temperature",
+      "note": "Vérifié : 18,11 °C donne 85,55, comme dans le mémoire."
+    },
+    {
+      "code": "t_moy_min_cycle",
+      "label": "Température moyenne minimale du cycle de croissance",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            25,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            22,
+            25
+          ]
+        ],
+        "S2": [
+          [
+            20,
+            22
+          ]
+        ],
+        "S3": [
+          [
+            18,
+            20
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            18
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 12",
+      "confidence": "haute",
+      "unit": "°C",
+      "climateGroup": "temperature",
+      "note": "Critère présent dans l'annexe mais non évalué dans le mémoire."
+    },
+    {
+      "code": "n_sur_N",
+      "label": "Insolation relative annuelle (n/N)",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0.75,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            0.45,
+            0.75
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            0.45
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 12",
+      "confidence": "haute",
+      "climateGroup": "insolation",
+      "note": "Vérifié : 0,49 donne 86,33, comme dans le mémoire. Les classes S3 à N2 sont vides dans l'annexe."
+    }
+  ],
+  "soilRequirements": [
+    {
+      "code": "pente",
+      "label": "Pente",
+      "category": "t",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "echelle_1": {
+          "S1-0": [
+            [
+              0,
+              1
+            ]
+          ],
+          "S1-1": [
+            [
+              1,
+              2
+            ]
+          ],
+          "S2": [
+            [
+              2,
+              4
+            ]
+          ],
+          "S3": [
+            [
+              4,
+              6
+            ]
+          ],
+          "N2": [
+            [
+              6,
+              null
+            ]
+          ]
+        },
+        "echelle_2": {
+          "S1-0": [
+            [
+              0,
+              2
+            ]
+          ],
+          "S1-1": [
+            [
+              2,
+              4
+            ]
+          ],
+          "S2": [
+            [
+              4,
+              8
+            ]
+          ],
+          "S3": [
+            [
+              8,
+              16
+            ]
+          ],
+          "N2": [
+            [
+              16,
+              null
+            ]
+          ]
+        },
+        "echelle_3": {
+          "S1-0": [
+            [
+              0,
+              4
+            ]
+          ],
+          "S1-1": [
+            [
+              4,
+              8
+            ]
+          ],
+          "S2": [
+            [
+              8,
+              16
+            ]
+          ],
+          "S3": [
+            [
+              16,
+              30
+            ]
+          ],
+          "N1": [
+            [
+              30,
+              50
+            ]
+          ],
+          "N2": [
+            [
+              50,
+              null
+            ]
+          ]
+        }
+      },
+      "correctable": true,
+      "source": "Annexe 13",
+      "confidence": "moyenne",
+      "unit": "%",
+      "depthRule": "surface",
+      "note": "Colonnes décalées dans l'annexe (30-50 apparaît deux fois, 8-16 manque). Valeurs proposées = échelle standard (3), identique à celle du manioc, du plantain et de l'ananas."
+    },
+    {
+      "code": "inondation",
+      "label": "Inondation",
+      "category": "w",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "F0"
+        ],
+        "S1-1": [
+          "F0"
+        ],
+        "S2": [
+          "F1"
+        ],
+        "S3": [
+          "F2"
+        ],
+        "N2": [
+          "F3",
+          "F4"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 13",
+      "confidence": "moyenne"
+    },
+    {
+      "code": "drainage",
+      "label": "Drainage",
+      "category": "w",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": ["imparfait"],
+        "S1-1": ["bon", "modere"],
+        "S3": ["pauvre_aere"],
+        "N1": ["pauvre_drainable"],
+        "N2": ["pauvre_non_drainable", "tres_pauvre"]
+      },
+      "correctable": true,
+      "source": "Annexe 13 ; confirmé par recherche complémentaire (2026-09-22)",
+      "confidence": "moyenne",
+      "note": "Lecture littérale de l'annexe 13 (S1-0 imparfait meilleur que S1-1 bon) confirmée par une source indépendante : Kome, G.K. et al. (2020) 'Land Suitability Evaluation for Oil Palm (Elaeis guineensis Jacq.) in Coastal Plains of Southwest Cameroon', Open Journal of Soil Science 10(7), Table 4 — https://doi.org/10.4236/ojss.2020.107014 — donne exactement 'S1 : Moderate to Imperfect' puis 'S2 : Well and somewhat excessive' pour le palmier à huile : le palmier tolère mieux un drainage imparfait (besoin d'humidité constante) qu'un drainage excessif, à l'inverse de la plupart des cultures. La classe S2 reste sans valeur indépendante (non donnée par l'une ou l'autre source) — bornes laissées incomplètes plutôt que devinées. Confiance relevée de « faible » à « moyenne ».",
+      "lectureLitterale": {
+        "S1-0": "Imparfait",
+        "S1-1": "Bon, modéré",
+        "S3": "Pauvre et aéré",
+        "N1": "Pauvre mais drainable",
+        "N2": "Non drainable"
+      }
+    },
+    {
+      "code": "texture",
+      "label": "Texture / structure (classe Sys)",
+      "category": "s",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "C>60s",
+          "C<60s",
+          "SiCs"
+        ],
+        "S1-1": [
+          "SiCL",
+          "Co",
+          "CL",
+          "SC",
+          "L"
+        ],
+        "S2": [
+          "SCL"
+        ],
+        "S3": [
+          "SL",
+          "LfS"
+        ],
+        "N2": [
+          "Cm",
+          "SiCm",
+          "LS",
+          "LcS",
+          "fS",
+          "S",
+          "cS"
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "moyenne",
+      "depthRule": "ponderation_25cm",
+      "note": "L'annexe écrit deux fois « c>60 s » en S1-0 ; la seconde est probablement « C<60s »."
+    },
+    {
+      "code": "elements_grossiers",
+      "label": "Fragments grossiers en profondeur",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            3
+          ]
+        ],
+        "S1-1": [
+          [
+            3,
+            15
+          ]
+        ],
+        "S2": [
+          [
+            15,
+            35
+          ]
+        ],
+        "S3": [
+          [
+            35,
+            55
+          ]
+        ],
+        "N2": [
+          [
+            55,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "moyenne",
+      "unit": "% vol",
+      "depthRule": "ponderation_25cm",
+      "note": "S1-1 déduit (cellule décalée) ; valeurs identiques au plantain et au manioc."
+    },
+    {
+      "code": "profondeur_sol",
+      "label": "Profondeur du sol",
+      "category": "s",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            150,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            100,
+            150
+          ]
+        ],
+        "S2": [
+          [
+            50,
+            100
+          ]
+        ],
+        "S3": [
+          [
+            25,
+            50
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            25
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "haute",
+      "unit": "cm"
+    },
+    {
+      "code": "caco3",
+      "label": "CaCO3",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            0
+          ]
+        ],
+        "S1-1": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S2": [
+          [
+            1,
+            5
+          ]
+        ],
+        "S3": [
+          [
+            5,
+            10
+          ]
+        ],
+        "N2": [
+          [
+            10,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "moyenne_0_100"
+    },
+    {
+      "code": "gypse",
+      "label": "Gypse",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            0
+          ]
+        ],
+        "S1-1": [
+          [
+            0,
+            0.5
+          ]
+        ],
+        "S2": [
+          [
+            0.5,
+            2
+          ]
+        ],
+        "S3": [
+          [
+            2,
+            3
+          ]
+        ],
+        "N2": [
+          [
+            3,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "moyenne_0_100"
+    },
+    {
+      "code": "cec_argile",
+      "label": "CEC de l'argile",
+      "category": "f",
+      "kind": "special_sys_cec",
+      "bounds": {
+        "S1-0": [
+          "> 16"
+        ],
+        "S1-1": [
+          "< 16 (-)"
+        ],
+        "S2": [
+          "< 16 (+)"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 13",
+      "confidence": "moyenne",
+      "unit": "cmol(+)/kg argile",
+      "depthRule": "a_50cm",
+      "note": "Notation Sys « (-) / (+) » non confirmée malgré recherche complémentaire (2026-09-22). Hypothèse la plus soutenue par la littérature pédologique générale (non spécifique à Sys) : (-) désignerait une argile à activité faible « ordinaire » (kaolinitique, échange cationique classique), (+) désignerait une argile à activité faible montrant un comportement à charge variable/positive (matériau très altéré, riche en sesquioxydes, forte fixation du phosphore) — non vérifié. Élément en faveur d'une distinction réelle (pas un artefact de lecture) : le même motif « <16 (-) puis <16 (+) » réapparaît à l'identique pour le manioc et le bananier plantain dans ce paquet. Élément de comparaison : Kome et al. (2020, Open Journal of Soil Science 10(7), Table 4, https://doi.org/10.4236/ojss.2020.107014) utilisent pour le palmier à huile un seuil CEC argile non différencié en dessous de 16 (une seule classe), sans notation (-)/(+) — leur adaptation est donc plus simple que celle transcrite ici, ce qui suggère que la distinction (-)/(+) provient d'une source plus détaillée (probablement Sys, Van Ranst, Debaveye & Beernaert 1993, Part III, non consultée en intégralité). Critère non évaluable tant que la règle n'est pas confirmée — aucune valeur numérique de séparation n'est inventée."
+    },
+    {
+      "code": "saturation_bases",
+      "label": "Saturation en bases",
+      "category": "f",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            35,
+            100
+          ]
+        ],
+        "S1-1": [
+          [
+            20,
+            35
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            20
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 13",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "ponderation_25cm",
+      "note": "Vérifié : 28,94 % donne 90,96, comme dans le mémoire."
+    },
+    {
+      "code": "carbone_organique",
+      "label": "Carbone organique",
+      "category": "f",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            1.2,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            0.8,
+            1.2
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            0.8
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 13",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "0_15cm",
+      "note": "Le mémoire note 1,09 % → 89,14 ; l'interpolation donne 92,25. Écart à documenter."
+    },
+    {
+      "code": "ph",
+      "label": "pH eau",
+      "category": "f",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            5.2,
+            5.8
+          ]
+        ],
+        "S1-1": [
+          [
+            5.0,
+            5.2
+          ],
+          [
+            5.8,
+            6.0
+          ]
+        ],
+        "S2": [
+          [
+            4.5,
+            5.0
+          ],
+          [
+            6.0,
+            7.0
+          ]
+        ],
+        "S3": [
+          [
+            4.0,
+            4.5
+          ],
+          [
+            7.0,
+            8.0
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            4.0
+          ],
+          [
+            8.0,
+            null
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 13",
+      "confidence": "haute",
+      "depthRule": "0_30cm",
+      "note": "Vérifié : pH 4,7 donne 70, comme dans le mémoire."
+    },
+    {
+      "code": "ece",
+      "label": "Conductivité électrique de l'extrait (ECe)",
+      "category": "n",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            2
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            3
+          ]
+        ],
+        "S3": [
+          [
+            3,
+            4
+          ]
+        ],
+        "N1": [
+          [
+            4,
+            8
+          ]
+        ],
+        "N2": [
+          [
+            8,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "moyenne",
+      "unit": "mmhos/cm",
+      "depthRule": "moyenne_0_100",
+      "note": "Cellule S1-1 vide dans l'annexe ; 1-2 déduit par continuité."
+    },
+    {
+      "code": "esp",
+      "label": "Sodium échangeable (ESP)",
+      "category": "n",
+      "kind": "numerique_decroissant",
+      "bounds": null,
+      "correctable": false,
+      "source": "Annexe 13",
+      "confidence": "faible",
+      "unit": "%",
+      "depthRule": "max_0_100",
+      "note": "Aucune valeur lisible dans l'annexe. Critère manquant. Recherche complémentaire (2026-09-22) : Kome et al. (2020, Open Journal of Soil Science 10(7), Table 4, https://doi.org/10.4236/ojss.2020.107014), adaptation indépendante des exigences du palmier à huile, n'utilise pas non plus l'ESP — seule la conductivité électrique (EC) figure dans leur catégorie salinité/alcalinité. L'absence d'ESP pourrait donc être un choix méthodologique récurrent pour cette culture plutôt qu'un simple defaut de lecture, mais cela ne fournit aucun seuil chiffré : le critère reste non évaluable."
+    }
+  ],
+  "conventions": "Convention : [a, null] = supérieur à a ; [null, b] = inférieur à b."
+}

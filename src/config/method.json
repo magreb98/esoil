@@ -1,0 +1,135 @@
+{
+  "_comment": "Paramètres de la méthode FAO/Sys. Toute valeur marquée [À CONFIRMER] dans le prompt v2 est ici en configuration, jamais en dur dans le code. Modifier ce fichier ne nécessite pas de recompilation du moteur.",
+
+  "ratingScale": {
+    "_source": "Manuel p.26",
+    "S1-0": { "valeurParametriqueMin": 95, "valeurParametriqueMax": 100, "degre": 0 },
+    "S1-1": { "valeurParametriqueMin": 85, "valeurParametriqueMax": 95, "degre": 1 },
+    "S2": { "valeurParametriqueMin": 60, "valeurParametriqueMax": 85, "degre": 2 },
+    "S3": { "valeurParametriqueMin": 40, "valeurParametriqueMax": 60, "degre": 3 },
+    "N1": { "valeurParametriqueMin": 25, "valeurParametriqueMax": 40, "degre": 4 },
+    "N2": { "valeurParametriqueMin": 0, "valeurParametriqueMax": 25, "degre": 4 }
+  },
+
+  "boundaryRule": {
+    "_source": "§6 [À CONFIRMER]",
+    "_description": "Valeur exactement sur une borne entre deux classes : on retient la classe inférieure (moins favorable).",
+    "onBoundaryUse": "classe_inferieure"
+  },
+
+  "openIntervalAndEmptyN1Rule": {
+    "_source": "§6 [À CONFIRMER]",
+    "emptyN1Behavior": "valeurs_hors_S3_vont_en_N2",
+    "openIntervalBehavior": "prendre_la_borne_haute_de_la_classe"
+  },
+
+  "depthSliceWeighting": {
+    "_source": "§4.1, manuel p.39-44",
+    "_description": "Découpage en tranches de 25cm ; facteurs appliqués à la valeur de chaque tranche puis divisé par le nombre de tranches.",
+    "annuelle_ou_sol_peu_profond": {
+      "profondeur_0_25cm": { "tranches": 1, "facteurs": [1] },
+      "profondeur_25_50cm": { "tranches": 2, "facteurs": [1.25, 0.75] },
+      "profondeur_50_75cm": { "tranches": 3, "facteurs": [1.5, 1, 0.5] },
+      "profondeur_superieure_100cm": { "tranches": 4, "facteurs": [1.75, 1.25, 0.75, 0.25] }
+    },
+    "perenne": {
+      "enracinement_0_100cm": { "tranches": 4, "facteurs": [1.75, 1.25, 0.75, 0.25] },
+      "enracinement_100_125cm": { "tranches": 5, "facteurs": [1.8, 1.4, 1.0, 0.6, 0.2] },
+      "enracinement_125_150cm": { "tranches": 6, "facteurs": [2, 1.5, 1, 0.75, 0.5, 0.25] }
+    },
+    "profilPlusCourtQueEnracinement": {
+      "_source": "§4.1 [À CONFIRMER]",
+      "_description": "Comportement par défaut quand le profil décrit est moins profond que la profondeur d'enracinement de la culture : les tranches manquantes reprennent la valeur du dernier horizon décrit (extrapolation), et un avertissement de traçabilité est ajouté au résultat.",
+      "strategie": "extrapoler_dernier_horizon"
+    }
+  },
+
+  "fixedDepthRules": {
+    "_source": "§4.2",
+    "organicCarbon": { "fromCm": 0, "toCm": 15 },
+    "phWater": { "fromCm": 0, "toCm": 30 },
+    "cecClay": { "atCm": 50 },
+    "ece": { "fromCm": 0, "toCm": 100 },
+    "espMax": { "fromCm": 0, "toCm": 100 },
+    "caco3AndGypsum": { "fromCm": 0, "toCm": 100 }
+  },
+
+  "rootingDepthDefaultsCm": {
+    "_source": "Non documenté dans le paquet de données de référence (rootingDepthCm: null pour les 4 cultures). Recherche complémentaire (2026-09-22) : FAO Irrigation and Drainage Paper No. 56 (Allen et al., 1998), Table 22 'Maximum effective rooting depth' — https://www.fao.org/4/x0490e/x0490e0e.htm — donne des fourchettes par culture (bornes hautes retenues ici, cohérent avec l'objectif de la pondération Sys qui couvre toute la zone d'absorption utile). Palmier à huile recoupé avec une étude d'architecture racinaire dédiée (système racinaire concentré dans les 140 premiers cm) plutôt qu'avec la catégorie générique FAO-56 'palm trees' (0,7-1,1m), jugée moins spécifique.",
+    "_description": "Valeur opérationnelle par défaut, utilisée uniquement pour choisir la table de pondération par tranches de 25cm (§4.1) quand la profondeur d'enracinement n'est pas documentée à la source. N'est jamais une donnée d'aptitude — signalée dans la traçabilité de chaque critère pondéré.",
+    "oil_palm": 140,
+    "_oil_palm_source": "Architecture racinaire du palmier à huile : système absorbant concentré dans les 140 premiers cm (recherche 2026-09-22) ; FAO-56 'palm trees' (générique) : 0,7-1,1m, borne haute proche (110cm)",
+    "plantain": 90,
+    "_plantain_source": "FAO-56 Table 22, banane : 0,5-0,9m — borne haute retenue",
+    "cassava": 100,
+    "_cassava_source": "FAO-56 Table 22, manioc (2e année) : 0,7-1,0m — borne haute retenue, cohérent avec la valeur déjà en place",
+    "pineapple": 60,
+    "_pineapple_source": "FAO-56 Table 22, ananas : 0,3-0,6m — borne haute retenue",
+    "bambara_groundnut": 50,
+    "_bambara_groundnut_source": "Non trouvé dans FAO-56 (légumineuse annuelle absente de la table) — valeur par défaut du projet conservée [À CONFIRMER]",
+    "_default": 100
+  },
+
+  "tnuitSigne": {
+    "_source": "method-formulas.md §2 [RÉSERVE : le scan imprime « + », probablement une erreur de photocopie — voir la note du paquet]",
+    "_description": "Signe appliqué dans la formule de la température nocturne Tnuit = (Tmax+Tmin)/2 (signe) (Tmax-Tmin)/(4π) × (46-N)/(24-N). « - » est physiquement cohérent (Tnuit < Tmoy) ; configurable ici sans toucher au code.",
+    "signe": "-"
+  },
+
+  "numberIntensityThresholds": {
+    "_source": "§7.2, manuel p.25 [À CONFIRMER : seuils exacts retenus au département]",
+    "_description": "Le manuel donne des fourchettes (« 3 à 4 », « 2 à 3 »). Bornes hautes retenues par défaut.",
+    "s1_1_max_legeres_degre1": 4,
+    "s2_max_moderees_degre2": 3,
+    "s3_min_severes_degre3": 1
+  },
+
+  "parametricConversion": {
+    "_source": "§7.3, figure 1",
+    "ciAbove": { "threshold": 92.5, "crValue": 100, "note": "[À CONFIRMER]" },
+    "ciMid": { "min": 25, "max": 92.5, "formula": "16.67 + 0.9 * CI" },
+    "ciBelow": { "threshold": 25, "formula": "1.6 * CI" }
+  },
+
+  "landIndexGrid": {
+    "_source": "§7.3, manuel p.27",
+    "bands": [
+      { "itMin": 90, "itMax": 100, "classe": "S1-0" },
+      { "itMin": 85, "itMax": 90, "classe": "S1-0/1" },
+      { "itMin": 75, "itMax": 85, "classe": "S1-1" },
+      { "itMin": 60, "itMax": 75, "classe": "S1-1/S2" },
+      { "itMin": 50, "itMax": 60, "classe": "S2" },
+      { "itMin": 40, "itMax": 50, "classe": "S2/S3" },
+      { "itMin": 25, "itMax": 40, "classe": "S3" },
+      { "itMin": 15, "itMax": 25, "classe": "S3/N" },
+      { "itMin": 0, "itMax": 15, "classe": "N1_ou_N2" }
+    ]
+  },
+
+  "potentialCorrections": {
+    "_source": "§8.1 [À CONFIRMER : liste des corrections admises et valeur retenue après correction]",
+    "_description": "Catégories jamais corrigibles par défaut : climat (c) et profondeur/sol physique structurel (s, partiel). Corrections proposées à l'utilisateur dans le simulateur de scénarios.",
+    "correctableCategories": ["w", "f", "n"],
+    "partiallyCorrectableCategories": ["t", "s"],
+    "neverCorrectableCategories": ["c"],
+    "correctionActions": [
+      { "category": "f", "action": "fertilisation", "raisesTo": "meilleure_classe_disponible" },
+      { "category": "n", "action": "chaulage_ou_lessivage", "raisesTo": "meilleure_classe_disponible" },
+      { "category": "w", "action": "drainage", "raisesTo": "meilleure_classe_disponible" },
+      { "category": "t", "action": "amenagement_terrasses", "raisesTo": "une_classe" }
+    ]
+  },
+
+  "managementLevels": {
+    "_source": "Tableau 6 du manuel (Sys & Riquier)",
+    "faible": { "label": "Faible", "description": "Culture traditionnelle, peu ou pas d'intrants, outils manuels, pas de mécanisation." },
+    "intermediaire": { "label": "Intermédiaire", "description": "Quelques intrants (semences améliorées, engrais limité), traction animale possible." },
+    "eleve": { "label": "Élevé", "description": "Intrants complets (engrais, phytosanitaires, semences sélectionnées), mécanisation, irrigation d'appoint possible." }
+  },
+
+  "intermediateClassYieldRule": {
+    "_source": "§8.2 [À CONFIRMER]",
+    "_description": "Pour les classes intermédiaires (S3/N, S1-0/1...), utiliser la classe la plus basse des deux — comportement du mémoire (S3/N → fourchette N).",
+    "strategie": "classe_la_plus_basse"
+  }
+}

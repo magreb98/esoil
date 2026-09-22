@@ -1,0 +1,710 @@
+{
+  "code": "pineapple",
+  "name": "Ananas",
+  "scientificName": "Ananas comosus",
+  "lifecycle": "semi-perenne",
+  "rootingDepthCm": null,
+  "correctionFactorGroup": "mais_ananas_groupe",
+  "source": "GWETH (2024), annexes 16 et 17",
+  "verificationStatus": "transcrit_non_verifie",
+  "climateRequirements": [
+    {
+      "code": "precip_annuelle",
+      "label": "Précipitations annuelles",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            1200,
+            1400
+          ]
+        ],
+        "S1-1": [
+          [
+            1000,
+            1200
+          ],
+          [
+            1400,
+            1600
+          ]
+        ],
+        "S2": [
+          [
+            800,
+            1000
+          ],
+          [
+            1600,
+            2000
+          ]
+        ],
+        "S3": [
+          [
+            600,
+            800
+          ],
+          [
+            2000,
+            null
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            600
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 16",
+      "confidence": "haute",
+      "unit": "mm",
+      "climateGroup": "eau",
+      "note": "Ndoupe (1 891 mm) tombe en S2 côté humide."
+    },
+    {
+      "code": "t_moy_annuelle",
+      "label": "Température moyenne annuelle",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            22,
+            24
+          ]
+        ],
+        "S1-1": [
+          [
+            20,
+            22
+          ],
+          [
+            24,
+            26
+          ]
+        ],
+        "S2": [
+          [
+            18,
+            20
+          ],
+          [
+            26,
+            30
+          ]
+        ],
+        "S3": [
+          [
+            16,
+            18
+          ],
+          [
+            30,
+            35
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            16
+          ],
+          [
+            35,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 16",
+      "confidence": "haute",
+      "unit": "°C",
+      "climateGroup": "temperature"
+    },
+    {
+      "code": "hr_annuelle",
+      "label": "Humidité relative annuelle",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            60,
+            80
+          ]
+        ],
+        "S1-1": [
+          [
+            50,
+            60
+          ],
+          [
+            80,
+            null
+          ]
+        ],
+        "S2": [
+          [
+            40,
+            50
+          ]
+        ],
+        "S3": [
+          [
+            30,
+            40
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            30
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 16",
+      "confidence": "haute",
+      "unit": "%",
+      "climateGroup": "humidite_air"
+    }
+  ],
+  "soilRequirements": [
+    {
+      "code": "pente",
+      "label": "Pente",
+      "category": "t",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "echelle_1": {
+          "S1-0": [
+            [
+              0,
+              1
+            ]
+          ],
+          "S1-1": [
+            [
+              1,
+              2
+            ]
+          ],
+          "S2": [
+            [
+              2,
+              4
+            ]
+          ],
+          "S3": [
+            [
+              4,
+              6
+            ]
+          ],
+          "N2": [
+            [
+              6,
+              null
+            ]
+          ]
+        },
+        "echelle_2": {
+          "S1-0": [
+            [
+              0,
+              2
+            ]
+          ],
+          "S1-1": [
+            [
+              2,
+              4
+            ]
+          ],
+          "S2": [
+            [
+              4,
+              8
+            ]
+          ],
+          "S3": [
+            [
+              8,
+              16
+            ]
+          ],
+          "N2": [
+            [
+              16,
+              null
+            ]
+          ]
+        },
+        "echelle_3": {
+          "S1-0": [
+            [
+              0,
+              4
+            ]
+          ],
+          "S1-1": [
+            [
+              4,
+              8
+            ]
+          ],
+          "S2": [
+            [
+              8,
+              16
+            ]
+          ],
+          "S3": [
+            [
+              16,
+              30
+            ]
+          ],
+          "N1": [
+            [
+              30,
+              50
+            ]
+          ],
+          "N2": [
+            [
+              50,
+              null
+            ]
+          ]
+        }
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "moyenne",
+      "unit": "%",
+      "depthRule": "surface"
+    },
+    {
+      "code": "inondation",
+      "label": "Inondation",
+      "category": "w",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "F0"
+        ],
+        "N2": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "faible"
+    },
+    {
+      "code": "drainage",
+      "label": "Drainage",
+      "category": "w",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "bon"
+        ],
+        "S1-1": [
+          "modere"
+        ],
+        "S2": [
+          "imparfait"
+        ],
+        "S3": [
+          "pauvre_aere"
+        ],
+        "N1": [
+          "pauvre_drainable"
+        ],
+        "N2": [
+          "pauvre_non_drainable",
+          "tres_pauvre"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "note": "Colonnes très décalées dans l'annexe ; répartition proposée à valider."
+    },
+    {
+      "code": "texture",
+      "label": "Texture / structure (classe Sys)",
+      "category": "s",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "L",
+          "SCL"
+        ],
+        "S1-1": [
+          "SL",
+          "SiL",
+          "Si",
+          "SC"
+        ],
+        "S2": [
+          "LS",
+          "LfS",
+          "Co",
+          "C<60s",
+          "SiC"
+        ],
+        "S3": [
+          "C<60v",
+          "C>60s",
+          "fS"
+        ],
+        "N2": [
+          "Cm",
+          "SiCm"
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "depthRule": "ponderation_25cm"
+    },
+    {
+      "code": "elements_grossiers",
+      "label": "Fragments grossiers",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            3
+          ]
+        ],
+        "S1-1": [
+          [
+            3,
+            15
+          ]
+        ],
+        "S2": [
+          [
+            15,
+            35
+          ]
+        ],
+        "S3": [
+          [
+            35,
+            55
+          ]
+        ],
+        "N2": [
+          [
+            55,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 17",
+      "confidence": "moyenne",
+      "unit": "% vol",
+      "depthRule": "ponderation_25cm"
+    },
+    {
+      "code": "profondeur_sol",
+      "label": "Profondeur du sol",
+      "category": "s",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            75,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            60,
+            75
+          ]
+        ],
+        "S2": [
+          [
+            40,
+            60
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            20
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "unit": "cm",
+      "note": "Valeur S3 illisible (probablement 20-40)."
+    },
+    {
+      "code": "caco3",
+      "label": "CaCO3",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            2
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            3
+          ]
+        ],
+        "N2": [
+          [
+            5,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "unit": "%",
+      "depthRule": "moyenne_0_100"
+    },
+    {
+      "code": "gypse",
+      "label": "Gypse",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            2
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            3
+          ]
+        ],
+        "N2": [
+          [
+            5,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "unit": "%",
+      "depthRule": "moyenne_0_100"
+    },
+    {
+      "code": "cec_argile",
+      "label": "CEC de l'argile",
+      "category": "f",
+      "kind": "special_sys_cec",
+      "bounds": {
+        "S1-0": [
+          "> 24"
+        ],
+        "S1-1": [
+          "16-24"
+        ],
+        "S2": [
+          "toute valeur"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "unit": "cmol(+)/kg argile",
+      "depthRule": "a_50cm"
+    },
+    {
+      "code": "saturation_bases",
+      "label": "Saturation en bases",
+      "category": "f",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            35,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            20,
+            35
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            20
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "faible",
+      "unit": "%",
+      "depthRule": "ponderation_25cm"
+    },
+    {
+      "code": "carbone_organique",
+      "label": "Carbone organique",
+      "category": "f",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            1.5,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            0.8,
+            1.5
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            0.8
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "moyenne",
+      "unit": "%",
+      "depthRule": "0_15cm"
+    },
+    {
+      "code": "ph",
+      "label": "pH du sol",
+      "category": "f",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            5.5,
+            6.5
+          ]
+        ],
+        "S1-1": [
+          [
+            5.2,
+            5.5
+          ],
+          [
+            6.5,
+            7.0
+          ]
+        ],
+        "S2": [
+          [
+            4.8,
+            5.2
+          ],
+          [
+            7.0,
+            7.6
+          ]
+        ],
+        "S3": [
+          [
+            4.5,
+            4.8
+          ],
+          [
+            7.6,
+            8.2
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 17",
+      "confidence": "moyenne",
+      "depthRule": "0_30cm"
+    },
+    {
+      "code": "ece",
+      "label": "ECe",
+      "category": "n",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            2
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            3
+          ]
+        ],
+        "S3": [
+          [
+            3,
+            4
+          ]
+        ],
+        "N1": [
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 17",
+      "confidence": "moyenne",
+      "unit": "mmhos/cm",
+      "depthRule": "moyenne_0_100"
+    }
+  ],
+  "conventions": "Convention : [a, null] = supérieur à a ; [null, b] = inférieur à b."
+}

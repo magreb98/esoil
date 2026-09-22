@@ -1,0 +1,126 @@
+{
+  "description": "Facteurs de correction des rendements du tableau 7 pour les niveaux d'intrants moyen et faible (Beernaert & Bitondo, 1993, p.60-61). Les facteurs spécifiques priment sur les facteurs généraux.",
+  "general": {
+    "legumineuses": {
+      "moyen": 0.8,
+      "faible": 0.7
+    },
+    "autres_cultures": {
+      "moyen": 0.65,
+      "faible": 0.5
+    }
+  },
+  "specifiques": [
+    {
+      "groupe": "mais_ananas_groupe",
+      "cultures": [
+        "maïs",
+        "ananas",
+        "pomme de terre",
+        "sorgho",
+        "patate douce"
+      ],
+      "moyen": 0.65,
+      "faible": 0.45
+    },
+    {
+      "groupe": "manioc_groupe",
+      "cultures": [
+        "manioc",
+        "café",
+        "coton",
+        "vigne",
+        "arachide",
+        "sisal",
+        "canne à sucre"
+      ],
+      "moyen": 0.55,
+      "faible": 0.3
+    },
+    {
+      "groupe": "banane_groupe",
+      "cultures": [
+        "banane",
+        "chou",
+        "pois chiche",
+        "lin",
+        "lentille",
+        "échalote",
+        "blé"
+      ],
+      "moyen": 0.7,
+      "faible": 0.5
+    },
+    {
+      "groupe": "orge_groupe",
+      "cultures": [
+        "orge",
+        "agrumes",
+        "avoine",
+        "riz",
+        "teff",
+        "tomate"
+      ],
+      "moyen": 0.75,
+      "faible": 0.6
+    },
+    {
+      "groupe": "piment_groupe",
+      "cultures": [
+        "piment",
+        "mils",
+        "carthame",
+        "sésame",
+        "tournesol",
+        "tabac"
+      ],
+      "moyen": 0.6,
+      "faible": 0.4
+    },
+    {
+      "groupe": "haricot_groupe",
+      "cultures": [
+        "haricot",
+        "lablab",
+        "pois",
+        "soja",
+        "vesce"
+      ],
+      "moyen": 0.85,
+      "faible": 0.75
+    },
+    {
+      "groupe": "niebe_groupe",
+      "cultures": [
+        "niébé",
+        "niger"
+      ],
+      "moyen": 0.8,
+      "faible": 0.5
+    }
+  ],
+  "affectationCulturesDuProjet": {
+    "oil_palm": {
+      "groupe": "autres_cultures",
+      "statut": "a_confirmer",
+      "note": "Palmier non listé nommément."
+    },
+    "plantain": {
+      "groupe": "banane_groupe",
+      "statut": "a_confirmer",
+      "note": "Le manuel cite « banana » ; application au plantain à confirmer."
+    },
+    "cassava": {
+      "groupe": "manioc_groupe",
+      "statut": "verifie"
+    },
+    "pineapple": {
+      "groupe": "mais_ananas_groupe",
+      "statut": "verifie"
+    },
+    "bambara_groundnut": {
+      "groupe": "legumineuses",
+      "statut": "a_confirmer"
+    }
+  }
+}

@@ -1,0 +1,2421 @@
+{
+  "description": "Rendements (t/ha) en agriculture pluviale, niveau d'intrants élevé, par classe d'aptitude. Données préparées à l'INIA (Mozambique) et au CUDs de Dschang ; le manuel précise qu'elles sont indicatives et doivent être comparées aux données de terrain.",
+  "reductionParClasse_pctRendementOptimal": {
+    "S1-0": [
+      90,
+      100
+    ],
+    "S1-1": [
+      75,
+      90
+    ],
+    "S2": [
+      50,
+      75
+    ],
+    "S3": [
+      25,
+      50
+    ],
+    "N": [
+      0,
+      25
+    ]
+  },
+  "entries": [
+    {
+      "cropCode": "alfalfa_fresh",
+      "cropLabel": "Luzerne (fraîche)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          53.0,
+          60.0
+        ],
+        "S1-1": [
+          40.0,
+          54.0
+        ],
+        "S2": [
+          27.0,
+          45.0
+        ],
+        "S3": [
+          13.0,
+          30.0
+        ],
+        "N": [
+          0.0,
+          15.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "aubergine",
+      "cropLabel": "Aubergine",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          20.0,
+          38.0
+        ],
+        "S1-1": [
+          15.0,
+          34.0
+        ],
+        "S2": [
+          10.0,
+          28.0
+        ],
+        "S3": [
+          5.0,
+          17.0
+        ],
+        "N": [
+          0.0,
+          9.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "avocado",
+      "cropLabel": "Avocatier",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.5
+        ],
+        "S1-1": [
+          1.5,
+          2.2
+        ],
+        "S2": [
+          1.0,
+          1.9
+        ],
+        "S3": [
+          0.5,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "bambara_groundnut",
+      "cropLabel": "Voandzou",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.5,
+          2.5
+        ],
+        "S1-1": [
+          1.1,
+          2.2
+        ],
+        "S2": [
+          0.8,
+          1.9
+        ],
+        "S3": [
+          0.4,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "banana",
+      "cropLabel": "Bananier (dont plantain)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          40.0,
+          60.0
+        ],
+        "S1-1": [
+          30.0,
+          54.0
+        ],
+        "S2": [
+          20.0,
+          45.0
+        ],
+        "S3": [
+          10.0,
+          30.0
+        ],
+        "N": [
+          0.0,
+          15.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "barley",
+      "cropLabel": "Orge",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.6,
+          2.7
+        ],
+        "S1-1": [
+          1.9,
+          2.4
+        ],
+        "S2": [
+          1.3,
+          2.0
+        ],
+        "S3": [
+          0.6,
+          1.8
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "beans_dry",
+      "cropLabel": "Haricot (sec)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          1.5
+        ],
+        "S1-1": [
+          0.7,
+          1.3
+        ],
+        "S2": [
+          0.5,
+          1.0
+        ],
+        "S3": [
+          0.2,
+          0.7
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "berseem_fresh",
+      "cropLabel": "Bersim (frais)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          40.0,
+          40.0
+        ],
+        "S1-1": [
+          30.0,
+          36.0
+        ],
+        "S2": [
+          20.0,
+          30.0
+        ],
+        "S3": [
+          10.0,
+          20.0
+        ],
+        "N": [
+          0.0,
+          10.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "Valeur S1-0 unique (40) dans la source."
+    },
+    {
+      "cropCode": "brassica_42oil",
+      "cropLabel": "Brassica (42 % huile)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.6,
+          1.7
+        ],
+        "S1-1": [
+          1.2,
+          1.5
+        ],
+        "S2": [
+          0.8,
+          1.3
+        ],
+        "S3": [
+          0.4,
+          0.8
+        ],
+        "N": [
+          0.0,
+          0.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cabbage",
+      "cropLabel": "Chou",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          35.0,
+          50.0
+        ],
+        "S1-1": [
+          26.0,
+          45.0
+        ],
+        "S2": [
+          17.0,
+          37.0
+        ],
+        "S3": [
+          9.0,
+          25.0
+        ],
+        "N": [
+          0.0,
+          12.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "S3 (9-25) plus large que la logique des autres classes ; conforme au scan."
+    },
+    {
+      "cropCode": "carrots",
+      "cropLabel": "Carotte",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          18.0,
+          20.0
+        ],
+        "S1-1": [
+          13.0,
+          18.0
+        ],
+        "S2": [
+          9.0,
+          15.0
+        ],
+        "S3": [
+          4.0,
+          10.0
+        ],
+        "N": [
+          0.0,
+          5.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cashew",
+      "cropLabel": "Anacardier",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.5,
+          3.0
+        ],
+        "S1-1": [
+          1.9,
+          2.7
+        ],
+        "S2": [
+          1.2,
+          2.2
+        ],
+        "S3": [
+          0.6,
+          1.5
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cassava",
+      "cropLabel": "Manioc",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          30.0,
+          40.0
+        ],
+        "S1-1": [
+          23.0,
+          36.0
+        ],
+        "S2": [
+          15.0,
+          30.0
+        ],
+        "S3": [
+          8.0,
+          20.0
+        ],
+        "N": [
+          0.0,
+          10.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "castor_beans",
+      "cropLabel": "Ricin",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.0
+        ],
+        "S1-1": [
+          1.5,
+          1.8
+        ],
+        "S2": [
+          1.0,
+          1.5
+        ],
+        "S3": [
+          0.5,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "Valeur S1-0 unique (2,0) dans la source."
+    },
+    {
+      "cropCode": "chickpea_grain",
+      "cropLabel": "Pois chiche (grain)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          1.3
+        ],
+        "S1-1": [
+          0.7,
+          1.1
+        ],
+        "S2": [
+          0.5,
+          1.0
+        ],
+        "S3": [
+          0.2,
+          0.7
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "chilies_fresh",
+      "cropLabel": "Piment (frais)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          6.5,
+          7.5
+        ],
+        "S1-1": [
+          4.9,
+          6.7
+        ],
+        "S2": [
+          3.2,
+          5.6
+        ],
+        "S3": [
+          1.6,
+          3.7
+        ],
+        "N": [
+          0.0,
+          1.9
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "oranges_180tr",
+      "cropLabel": "Oranger (180 arbres)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          25.0,
+          40.0
+        ],
+        "S1-1": [
+          19.0,
+          36.0
+        ],
+        "S2": [
+          12.0,
+          30.0
+        ],
+        "S3": [
+          6.0,
+          20.0
+        ],
+        "N": [
+          0.0,
+          10.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "grapefruit_100tr",
+      "cropLabel": "Pamplemoussier (100 arbres)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          16.0,
+          20.0
+        ],
+        "S1-1": [
+          12.0,
+          18.0
+        ],
+        "S2": [
+          8.0,
+          15.0
+        ],
+        "S3": [
+          4.0,
+          10.0
+        ],
+        "N": [
+          0.0,
+          5.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "mandarin_230tr",
+      "cropLabel": "Mandarinier (230 arbres)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          16.0,
+          20.0
+        ],
+        "S1-1": [
+          12.0,
+          18.0
+        ],
+        "S2": [
+          8.0,
+          15.0
+        ],
+        "S3": [
+          4.0,
+          10.0
+        ],
+        "N": [
+          0.0,
+          5.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cocoa_dry",
+      "cropLabel": "Cacaoyer (fèves sèches)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.5,
+          2.5
+        ],
+        "S1-1": [
+          1.1,
+          2.2
+        ],
+        "S2": [
+          0.8,
+          1.9
+        ],
+        "S3": [
+          0.4,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "coconut_copra",
+      "cropLabel": "Cocotier (coprah)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          3.0,
+          3.7
+        ],
+        "S1-1": [
+          2.2,
+          3.4
+        ],
+        "S2": [
+          1.5,
+          2.5
+        ],
+        "S3": [
+          0.7,
+          1.8
+        ],
+        "N": [
+          0.0,
+          0.9
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cocoyams",
+      "cropLabel": "Macabo / taro",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          15.0,
+          20.0
+        ],
+        "S1-1": [
+          11.0,
+          18.0
+        ],
+        "S2": [
+          8.0,
+          15.0
+        ],
+        "S3": [
+          4.0,
+          8.0
+        ],
+        "N": [
+          0.0,
+          5.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "coffee_arabica",
+      "cropLabel": "Caféier arabica",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.5,
+          3.0
+        ],
+        "S1-1": [
+          1.1,
+          2.7
+        ],
+        "S2": [
+          0.8,
+          2.2
+        ],
+        "S3": [
+          0.4,
+          1.5
+        ],
+        "N": [
+          0.0,
+          0.7
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "coffee_robusta",
+      "cropLabel": "Caféier robusta",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          2.0
+        ],
+        "S1-1": [
+          0.7,
+          1.8
+        ],
+        "S2": [
+          0.5,
+          1.5
+        ],
+        "S3": [
+          0.2,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cotton_seeds",
+      "cropLabel": "Cotonnier (graines)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.5,
+          2.0
+        ],
+        "S1-1": [
+          1.1,
+          1.8
+        ],
+        "S2": [
+          0.8,
+          1.5
+        ],
+        "S3": [
+          0.4,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cowpea_seeds",
+      "cropLabel": "Niébé (graines)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          1.3
+        ],
+        "S1-1": [
+          0.7,
+          1.1
+        ],
+        "S2": [
+          0.5,
+          1.0
+        ],
+        "S3": [
+          0.2,
+          0.7
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "cucumber",
+      "cropLabel": "Concombre",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          34.0,
+          44.0
+        ],
+        "S1-1": [
+          25.0,
+          40.0
+        ],
+        "S2": [
+          17.0,
+          33.0
+        ],
+        "S3": [
+          8.0,
+          22.0
+        ],
+        "N": [
+          0.0,
+          11.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "flax",
+      "cropLabel": "Lin",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.2,
+          1.4
+        ],
+        "S1-1": [
+          0.9,
+          1.3
+        ],
+        "S2": [
+          0.6,
+          1.0
+        ],
+        "S3": [
+          0.3,
+          0.7
+        ],
+        "N": [
+          0.0,
+          0.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "grape",
+      "cropLabel": "Vigne",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          10.0,
+          16.0
+        ],
+        "S1-1": [
+          7.0,
+          14.0
+        ],
+        "S2": [
+          3.0,
+          10.0
+        ],
+        "S3": [
+          2.0,
+          6.0
+        ],
+        "N": [
+          0.0,
+          4.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "Lecture S1-0 à confirmer (10-16)."
+    },
+    {
+      "cropCode": "green_pepper",
+      "cropLabel": "Poivron",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          10.0,
+          15.0
+        ],
+        "S1-1": [
+          7.0,
+          13.0
+        ],
+        "S2": [
+          5.0,
+          11.0
+        ],
+        "S3": [
+          2.0,
+          7.0
+        ],
+        "N": [
+          0.0,
+          3.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "groundnuts",
+      "cropLabel": "Arachide",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          3.0
+        ],
+        "S1-1": [
+          1.5,
+          2.7
+        ],
+        "S2": [
+          1.0,
+          2.2
+        ],
+        "S3": [
+          0.5,
+          1.5
+        ],
+        "N": [
+          0.0,
+          0.7
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "jute_dry_fibre",
+      "cropLabel": "Jute (fibre sèche)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.0
+        ],
+        "S1-1": [
+          1.5,
+          1.8
+        ],
+        "S2": [
+          1.0,
+          1.5
+        ],
+        "S3": [
+          0.5,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "Valeur S1-0 unique (2) dans la source."
+    },
+    {
+      "cropCode": "kapok_seedless_fibre",
+      "cropLabel": "Kapokier (fibre sans graines)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.7
+        ],
+        "S1-1": [
+          1.5,
+          2.4
+        ],
+        "S2": [
+          1.0,
+          2.4
+        ],
+        "S3": [
+          0.5,
+          1.3
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "kenaf_dry_fibre",
+      "cropLabel": "Kénaf (fibre sèche)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.0
+        ],
+        "S1-1": [
+          1.5,
+          1.8
+        ],
+        "S2": [
+          1.0,
+          1.5
+        ],
+        "S3": [
+          0.5,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "Valeur S1-0 unique (2) dans la source."
+    },
+    {
+      "cropCode": "lentil",
+      "cropLabel": "Lentille",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.8,
+          2.0
+        ],
+        "S1-1": [
+          1.4,
+          1.8
+        ],
+        "S2": [
+          0.9,
+          1.5
+        ],
+        "S3": [
+          0.4,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "lettuce",
+      "cropLabel": "Laitue",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          10.0,
+          14.0
+        ],
+        "S1-1": [
+          7.0,
+          12.0
+        ],
+        "S2": [
+          5.0,
+          10.0
+        ],
+        "S3": [
+          2.0,
+          7.0
+        ],
+        "N": [
+          0.0,
+          3.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "maize_grain_lowland",
+      "cropLabel": "Maïs grain (basses terres tropicales)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          6.0,
+          9.0
+        ],
+        "S1-1": [
+          4.5,
+          7.0
+        ],
+        "S2": [
+          3.0,
+          5.5
+        ],
+        "S3": [
+          1.5,
+          3.5
+        ],
+        "N": [
+          0.0,
+          2.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "maize_grain_highland",
+      "cropLabel": "Maïs grain (hautes terres tropicales)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          8.0,
+          13.0
+        ],
+        "S1-1": [
+          6.0,
+          10.0
+        ],
+        "S2": [
+          4.0,
+          8.0
+        ],
+        "S3": [
+          2.0,
+          5.5
+        ],
+        "N": [
+          0.0,
+          3.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "maize_fodder",
+      "cropLabel": "Maïs fourrager (frais)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          30.0,
+          33.0
+        ],
+        "S1-1": [
+          22.0,
+          30.0
+        ],
+        "S2": [
+          15.0,
+          25.0
+        ],
+        "S3": [
+          7.0,
+          16.0
+        ],
+        "N": [
+          0.0,
+          8.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "mango_75tr",
+      "cropLabel": "Manguier (75 arbres)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          14.0,
+          20.0
+        ],
+        "S1-1": [
+          10.0,
+          18.0
+        ],
+        "S2": [
+          7.0,
+          15.0
+        ],
+        "S3": [
+          3.0,
+          10.0
+        ],
+        "N": [
+          0.0,
+          5.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "millets",
+      "cropLabel": "Mils",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          4.0
+        ],
+        "S1-1": [
+          1.5,
+          3.6
+        ],
+        "S2": [
+          1.0,
+          3.0
+        ],
+        "S3": [
+          0.5,
+          2.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "nigerseed",
+      "cropLabel": "Niger (graines)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          0.9,
+          1.0
+        ],
+        "S1-1": [
+          0.7,
+          0.9
+        ],
+        "S2": [
+          0.4,
+          0.8
+        ],
+        "S3": [
+          0.2,
+          0.5
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "oil_palm_bunches",
+      "cropLabel": "Palmier à huile – régimes (20 % huile)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          20.0,
+          27.0
+        ],
+        "S1-1": [
+          15.0,
+          24.0
+        ],
+        "S2": [
+          10.0,
+          20.0
+        ],
+        "S3": [
+          5.0,
+          13.0
+        ],
+        "N": [
+          0.0,
+          6.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "oil_palm_pericarp_oil",
+      "cropLabel": "Palmier à huile – huile de péricarpe",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          4.0,
+          5.5
+        ],
+        "S1-1": [
+          3.0,
+          5.0
+        ],
+        "S2": [
+          2.0,
+          4.0
+        ],
+        "S3": [
+          1.0,
+          2.7
+        ],
+        "N": [
+          0.0,
+          1.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "oil_palm_kernels",
+      "cropLabel": "Palmier à huile – palmistes (47 % huile)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          1.3
+        ],
+        "S1-1": [
+          0.7,
+          1.2
+        ],
+        "S2": [
+          0.5,
+          1.0
+        ],
+        "S3": [
+          0.2,
+          0.6
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "oats",
+      "cropLabel": "Avoine",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.1,
+          2.4
+        ],
+        "S1-1": [
+          1.6,
+          2.2
+        ],
+        "S2": [
+          1.0,
+          1.8
+        ],
+        "S3": [
+          0.5,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.8
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "okra",
+      "cropLabel": "Gombo",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          10.0,
+          14.0
+        ],
+        "S1-1": [
+          7.0,
+          12.0
+        ],
+        "S2": [
+          5.0,
+          10.0
+        ],
+        "S3": [
+          2.0,
+          7.0
+        ],
+        "N": [
+          0.0,
+          3.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "olives",
+      "cropLabel": "Olivier (fruits)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          3.0,
+          4.0
+        ],
+        "S1-1": [
+          2.0,
+          3.5
+        ],
+        "S2": [
+          1.5,
+          3.0
+        ],
+        "S3": [
+          0.7,
+          2.0
+        ],
+        "N": [
+          0.0,
+          1.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "onion",
+      "cropLabel": "Oignon",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          14.0,
+          20.0
+        ],
+        "S1-1": [
+          10.0,
+          18.0
+        ],
+        "S2": [
+          7.0,
+          15.0
+        ],
+        "S3": [
+          3.0,
+          10.0
+        ],
+        "N": [
+          0.0,
+          5.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "papaya_1000tr",
+      "cropLabel": "Papayer (1 000 arbres)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          20.0,
+          26.0
+        ],
+        "S1-1": [
+          15.0,
+          23.0
+        ],
+        "S2": [
+          10.0,
+          20.0
+        ],
+        "S3": [
+          5.0,
+          13.0
+        ],
+        "N": [
+          0.0,
+          6.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "pea",
+      "cropLabel": "Pois",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.4,
+          1.6
+        ],
+        "S1-1": [
+          1.1,
+          1.5
+        ],
+        "S2": [
+          0.7,
+          1.2
+        ],
+        "S3": [
+          0.3,
+          0.8
+        ],
+        "N": [
+          0.0,
+          0.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "pigeon_pea_seed",
+      "cropLabel": "Pois d'Angole (graines)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.6,
+          2.0
+        ],
+        "S1-1": [
+          1.2,
+          1.8
+        ],
+        "S2": [
+          0.8,
+          1.5
+        ],
+        "S3": [
+          0.4,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "pineapple",
+      "cropLabel": "Ananas",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          43.0,
+          48.0
+        ],
+        "S1-1": [
+          32.0,
+          43.0
+        ],
+        "S2": [
+          21.0,
+          36.0
+        ],
+        "S3": [
+          10.0,
+          24.0
+        ],
+        "N": [
+          0.0,
+          12.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "potato",
+      "cropLabel": "Pomme de terre",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          25.0,
+          28.0
+        ],
+        "S1-1": [
+          19.0,
+          25.0
+        ],
+        "S2": [
+          12.0,
+          21.0
+        ],
+        "S3": [
+          6.0,
+          14.0
+        ],
+        "N": [
+          0.0,
+          7.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "pyrethrum_dry",
+      "cropLabel": "Pyrèthre (sec)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          1.6
+        ],
+        "S1-1": [
+          0.7,
+          1.4
+        ],
+        "S2": [
+          0.5,
+          1.2
+        ],
+        "S3": [
+          0.2,
+          0.8
+        ],
+        "N": [
+          0.0,
+          0.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "rubber",
+      "cropLabel": "Hévéa",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          2.0
+        ],
+        "S1-1": [
+          0.7,
+          1.8
+        ],
+        "S2": [
+          0.5,
+          1.5
+        ],
+        "S3": [
+          0.2,
+          1.0
+        ],
+        "N": [
+          0.0,
+          0.5
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "safflower",
+      "cropLabel": "Carthame",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.5,
+          2.5
+        ],
+        "S1-1": [
+          1.1,
+          2.2
+        ],
+        "S2": [
+          0.8,
+          1.9
+        ],
+        "S3": [
+          0.4,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sesame_40oil",
+      "cropLabel": "Sésame (40 % huile)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.2,
+          1.4
+        ],
+        "S1-1": [
+          0.9,
+          1.2
+        ],
+        "S2": [
+          0.6,
+          1.0
+        ],
+        "S3": [
+          0.3,
+          0.7
+        ],
+        "N": [
+          0.0,
+          0.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sisal",
+      "cropLabel": "Sisal",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.5
+        ],
+        "S1-1": [
+          1.5,
+          2.2
+        ],
+        "S2": [
+          1.0,
+          1.9
+        ],
+        "S3": [
+          0.5,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sorghum_grain_lowland",
+      "cropLabel": "Sorgho grain (basses terres tropicales)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          3.5,
+          5.0
+        ],
+        "S1-1": [
+          2.6,
+          4.5
+        ],
+        "S2": [
+          1.7,
+          3.7
+        ],
+        "S3": [
+          0.9,
+          2.5
+        ],
+        "N": [
+          0.0,
+          1.2
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sorghum_grain_highland",
+      "cropLabel": "Sorgho grain (hautes terres tropicales)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          8.0,
+          9.5
+        ],
+        "S1-1": [
+          6.0,
+          8.5
+        ],
+        "S2": [
+          4.0,
+          7.1
+        ],
+        "S3": [
+          2.0,
+          4.8
+        ],
+        "N": [
+          0.0,
+          2.4
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sorghum_fodder",
+      "cropLabel": "Sorgho fourrager",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          30.0,
+          33.0
+        ],
+        "S1-1": [
+          22.0,
+          30.0
+        ],
+        "S2": [
+          15.0,
+          25.0
+        ],
+        "S3": [
+          7.0,
+          16.0
+        ],
+        "N": [
+          0.0,
+          8.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "soya_seeds",
+      "cropLabel": "Soja (graines)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.5,
+          2.5
+        ],
+        "S1-1": [
+          1.1,
+          2.2
+        ],
+        "S2": [
+          0.8,
+          1.9
+        ],
+        "S3": [
+          0.4,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "spinach",
+      "cropLabel": "Épinard",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          10.0,
+          13.0
+        ],
+        "S1-1": [
+          7.0,
+          12.0
+        ],
+        "S2": [
+          5.0,
+          10.0
+        ],
+        "S3": [
+          2.0,
+          6.0
+        ],
+        "N": [
+          0.0,
+          3.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sugar_beet",
+      "cropLabel": "Betterave sucrière",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          40.0,
+          60.0
+        ],
+        "S1-1": [
+          30.0,
+          54.0
+        ],
+        "S2": [
+          20.0,
+          45.0
+        ],
+        "S3": [
+          10.0,
+          30.0
+        ],
+        "N": [
+          0.0,
+          15.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sugar_cane",
+      "cropLabel": "Canne à sucre",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          108.0,
+          120.0
+        ],
+        "S1-1": [
+          81.0,
+          108.0
+        ],
+        "S2": [
+          54.0,
+          90.0
+        ],
+        "S3": [
+          27.0,
+          60.0
+        ],
+        "N": [
+          0.0,
+          30.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sunflower",
+      "cropLabel": "Tournesol",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.1,
+          2.4
+        ],
+        "S1-1": [
+          1.6,
+          2.1
+        ],
+        "S2": [
+          1.0,
+          1.8
+        ],
+        "S3": [
+          0.5,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sweet_melon",
+      "cropLabel": "Melon",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          10.0,
+          14.0
+        ],
+        "S1-1": [
+          7.0,
+          12.0
+        ],
+        "S2": [
+          5.0,
+          10.0
+        ],
+        "S3": [
+          2.0,
+          7.0
+        ],
+        "N": [
+          0.0,
+          3.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "sweet_potato",
+      "cropLabel": "Patate douce",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          25.0,
+          30.0
+        ],
+        "S1-1": [
+          19.0,
+          27.0
+        ],
+        "S2": [
+          12.0,
+          22.0
+        ],
+        "S3": [
+          6.0,
+          15.0
+        ],
+        "N": [
+          0.0,
+          7.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "tea",
+      "cropLabel": "Théier",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          3.0,
+          3.3
+        ],
+        "S1-1": [
+          2.2,
+          3.0
+        ],
+        "S2": [
+          1.5,
+          2.5
+        ],
+        "S3": [
+          0.7,
+          1.7
+        ],
+        "N": [
+          0.0,
+          0.8
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "tobacco_fresh",
+      "cropLabel": "Tabac (frais)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.0,
+          2.5
+        ],
+        "S1-1": [
+          1.5,
+          2.2
+        ],
+        "S2": [
+          1.0,
+          1.9
+        ],
+        "S3": [
+          0.5,
+          1.2
+        ],
+        "N": [
+          0.0,
+          0.6
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "tobacco_dry",
+      "cropLabel": "Tabac (sec)",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.0,
+          1.5
+        ],
+        "S1-1": [
+          0.7,
+          1.3
+        ],
+        "S2": [
+          0.5,
+          1.0
+        ],
+        "S3": [
+          0.2,
+          0.7
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "tomato",
+      "cropLabel": "Tomate",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          47.0,
+          52.0
+        ],
+        "S1-1": [
+          35.0,
+          47.0
+        ],
+        "S2": [
+          23.0,
+          39.0
+        ],
+        "S3": [
+          12.0,
+          26.0
+        ],
+        "N": [
+          0.0,
+          13.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "vetch",
+      "cropLabel": "Vesce",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          1.1,
+          1.2
+        ],
+        "S1-1": [
+          0.8,
+          1.1
+        ],
+        "S2": [
+          0.5,
+          0.9
+        ],
+        "S3": [
+          0.3,
+          0.6
+        ],
+        "N": [
+          0.0,
+          0.3
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "faible",
+      "note": "Ligne raturée/surlignée sur le scan, lecture à vérifier."
+    },
+    {
+      "cropCode": "water_melon",
+      "cropLabel": "Pastèque",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          20.0,
+          27.0
+        ],
+        "S1-1": [
+          15.0,
+          24.0
+        ],
+        "S2": [
+          10.0,
+          20.0
+        ],
+        "S3": [
+          5.0,
+          13.0
+        ],
+        "N": [
+          0.0,
+          7.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "wheat",
+      "cropLabel": "Blé",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          2.5,
+          3.5
+        ],
+        "S1-1": [
+          1.9,
+          3.1
+        ],
+        "S2": [
+          1.2,
+          2.6
+        ],
+        "S3": [
+          0.6,
+          1.7
+        ],
+        "N": [
+          0.0,
+          0.8
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    },
+    {
+      "cropCode": "yams",
+      "cropLabel": "Igname",
+      "unit": "t/ha",
+      "system": "pluvial",
+      "inputLevel": "eleve",
+      "range": {
+        "S1-0": [
+          24.0,
+          33.0
+        ],
+        "S1-1": [
+          18.0,
+          30.0
+        ],
+        "S2": [
+          12.0,
+          25.0
+        ],
+        "S3": [
+          6.0,
+          16.0
+        ],
+        "N": [
+          0.0,
+          8.0
+        ]
+      },
+      "source": "Beernaert & Bitondo (1993), tableau 7, p.57-58",
+      "confidence": "haute"
+    }
+  ]
+}

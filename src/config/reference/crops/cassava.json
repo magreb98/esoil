@@ -1,0 +1,913 @@
+{
+  "code": "cassava",
+  "name": "Manioc",
+  "scientificName": "Manihot esculenta",
+  "lifecycle": "annuelle",
+  "rootingDepthCm": null,
+  "cycleDays": null,
+  "correctionFactorGroup": "manioc_groupe",
+  "source": "GWETH (2024), annexes 10 et 11",
+  "verificationStatus": "transcrit_non_verifie",
+  "climateRequirements": [
+    {
+      "code": "precip_annuelle",
+      "label": "Précipitations annuelles",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            1400,
+            1800
+          ]
+        ],
+        "S1-1": [
+          [
+            1000,
+            1400
+          ],
+          [
+            1800,
+            2400
+          ]
+        ],
+        "S2": [
+          [
+            600,
+            1000
+          ],
+          [
+            2400,
+            null
+          ]
+        ],
+        "S3": [
+          [
+            500,
+            600
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            500
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 10",
+      "confidence": "haute",
+      "unit": "mm",
+      "climateGroup": "eau",
+      "note": "Côté humide : aucune classe au-delà de S2 (> 2 400 mm)."
+    },
+    {
+      "code": "mois_secs",
+      "label": "Durée de la saison sèche (mois P < ½ETP)",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            3,
+            4
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            1
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "S3": [
+          [
+            6,
+            7
+          ]
+        ],
+        "N2": [
+          [
+            7,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 10",
+      "confidence": "haute",
+      "unit": "mois",
+      "climateGroup": "eau",
+      "note": "Le manioc préfère une saison sèche marquée (optimum 3-4 mois)."
+    },
+    {
+      "code": "t_moy_annuelle",
+      "label": "Température moyenne annuelle",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            20,
+            26
+          ]
+        ],
+        "S1-1": [
+          [
+            18,
+            20
+          ],
+          [
+            26,
+            30
+          ]
+        ],
+        "S2": [
+          [
+            16,
+            18
+          ],
+          [
+            30,
+            null
+          ]
+        ],
+        "S3": [
+          [
+            12,
+            16
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            12
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 10",
+      "confidence": "haute",
+      "unit": "°C",
+      "climateGroup": "temperature"
+    },
+    {
+      "code": "t_min_abs_mois_froid",
+      "label": "Température minimale absolue du mois le plus froid",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            16,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            10,
+            16
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            10
+          ]
+        ],
+        "S3": [
+          [
+            -2,
+            2
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 10",
+      "confidence": "faible",
+      "unit": "°C",
+      "climateGroup": "temperature",
+      "note": "N2 « < 7 » incohérent avec S2 2-10 et S3 -2/+2 ; les valeurs N2 de cette ligne et de la suivante semblent inversées. N2 laissé vide.",
+      "lectureLitterale": {
+        "N2": "<7"
+      }
+    },
+    {
+      "code": "t_min_moy_cycle",
+      "label": "Température minimale moyenne du cycle de croissance",
+      "category": "c",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            16,
+            18
+          ]
+        ],
+        "S1-1": [
+          [
+            12,
+            16
+          ],
+          [
+            18,
+            24
+          ]
+        ],
+        "S2": [
+          [
+            9,
+            12
+          ],
+          [
+            24,
+            null
+          ]
+        ],
+        "S3": [
+          [
+            7,
+            9
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 10",
+      "confidence": "faible",
+      "unit": "°C",
+      "climateGroup": "temperature",
+      "note": "N2 « < 2 » laisse un trou entre 2 et 7 ; probablement « < 7 » (inversion avec la ligne précédente). N2 laissé vide.",
+      "lectureLitterale": {
+        "N2": "<2"
+      }
+    },
+    {
+      "code": "n_sur_N",
+      "label": "n/N des 5 mois les plus chauds",
+      "category": "c",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0.7,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            0.55,
+            0.7
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            0.55
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 10",
+      "confidence": "haute",
+      "climateGroup": "insolation"
+    }
+  ],
+  "soilRequirements": [
+    {
+      "code": "pente",
+      "label": "Pente",
+      "category": "t",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "echelle_1": {
+          "S1-0": [
+            [
+              0,
+              1
+            ]
+          ],
+          "S1-1": [
+            [
+              1,
+              2
+            ]
+          ],
+          "S2": [
+            [
+              2,
+              4
+            ]
+          ],
+          "S3": [
+            [
+              4,
+              6
+            ]
+          ],
+          "N2": [
+            [
+              6,
+              null
+            ]
+          ]
+        },
+        "echelle_2": {
+          "S1-0": [
+            [
+              0,
+              2
+            ]
+          ],
+          "S1-1": [
+            [
+              2,
+              4
+            ]
+          ],
+          "S2": [
+            [
+              4,
+              8
+            ]
+          ],
+          "S3": [
+            [
+              8,
+              16
+            ]
+          ],
+          "N2": [
+            [
+              16,
+              null
+            ]
+          ]
+        },
+        "echelle_3": {
+          "S1-0": [
+            [
+              0,
+              4
+            ]
+          ],
+          "S1-1": [
+            [
+              4,
+              8
+            ]
+          ],
+          "S2": [
+            [
+              8,
+              16
+            ]
+          ],
+          "S3": [
+            [
+              16,
+              30
+            ]
+          ],
+          "N1": [
+            [
+              30,
+              50
+            ]
+          ],
+          "N2": [
+            [
+              50,
+              null
+            ]
+          ]
+        }
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "surface"
+    },
+    {
+      "code": "inondation",
+      "label": "Inondation",
+      "category": "w",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "F0"
+        ],
+        "N2": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "haute"
+    },
+    {
+      "code": "drainage",
+      "label": "Drainage",
+      "category": "w",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "bon"
+        ],
+        "S2": [
+          "modere"
+        ],
+        "S3": [
+          "imparfait"
+        ],
+        "N1": [
+          "pauvre_drainable"
+        ],
+        "N2": [
+          "pauvre_non_drainable",
+          "tres_pauvre"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "note": "Classe S1-1 vide dans l'annexe ; « pauvre et aéré » absent."
+    },
+    {
+      "code": "texture",
+      "label": "Texture / structure (classe Sys)",
+      "category": "s",
+      "kind": "ordinal",
+      "bounds": {
+        "S1-0": [
+          "L",
+          "SCL"
+        ],
+        "S1-1": [
+          "SL",
+          "C<60s",
+          "SiCs",
+          "Co",
+          "CL",
+          "SiCL",
+          "SC"
+        ],
+        "S2": [
+          "C>60s",
+          "LfS",
+          "C<60v",
+          "LcS",
+          "LS",
+          "fS"
+        ],
+        "S3": [
+          "S",
+          "cS"
+        ],
+        "N2": [
+          "Cm",
+          "Si"
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "faible",
+      "depthRule": "ponderation_25cm",
+      "note": "« C<60 » apparaît en S1-1, S2 et S3 sans suffixe de structure ; répartition s/v proposée à valider. « Si » en N2 surprenant."
+    },
+    {
+      "code": "elements_grossiers_surface",
+      "label": "Fragments grossiers en surface",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            0
+          ]
+        ],
+        "S1-1": [
+          [
+            0,
+            3
+          ]
+        ],
+        "S2": [
+          [
+            3,
+            15
+          ]
+        ],
+        "S3": [
+          [
+            15,
+            35
+          ]
+        ],
+        "N2": [
+          [
+            35,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "% vol"
+    },
+    {
+      "code": "elements_grossiers",
+      "label": "Fragments grossiers en profondeur",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            3
+          ]
+        ],
+        "S1-1": [
+          [
+            3,
+            15
+          ]
+        ],
+        "S2": [
+          [
+            15,
+            35
+          ]
+        ],
+        "S3": [
+          [
+            35,
+            55
+          ]
+        ],
+        "N2": [
+          [
+            55,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "% vol",
+      "depthRule": "ponderation_25cm"
+    },
+    {
+      "code": "profondeur_sol",
+      "label": "Profondeur du sol",
+      "category": "s",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            125,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            100,
+            125
+          ]
+        ],
+        "S2": [
+          [
+            75,
+            100
+          ]
+        ],
+        "S3": [
+          [
+            50,
+            75
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            50
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "cm"
+    },
+    {
+      "code": "caco3",
+      "label": "CaCO3",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            0
+          ]
+        ],
+        "S1-1": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S2": [
+          [
+            1,
+            5
+          ]
+        ],
+        "S3": [
+          [
+            5,
+            10
+          ]
+        ],
+        "N2": [
+          [
+            10,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "%",
+      "depthRule": "moyenne_0_100"
+    },
+    {
+      "code": "gypse",
+      "label": "Gypse",
+      "category": "s",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            0
+          ]
+        ],
+        "S1-1": [
+          [
+            0,
+            0.2
+          ]
+        ],
+        "S2": [
+          [
+            0.2,
+            1
+          ]
+        ],
+        "S3": [
+          [
+            1,
+            2
+          ]
+        ],
+        "N2": [
+          [
+            2,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "%",
+      "depthRule": "moyenne_0_100"
+    },
+    {
+      "code": "cec_argile",
+      "label": "CEC de l'argile",
+      "category": "f",
+      "kind": "special_sys_cec",
+      "bounds": {
+        "S1-0": [
+          "> 16"
+        ],
+        "S1-1": [
+          "toute valeur"
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "cmol(+)/kg argile",
+      "depthRule": "a_50cm",
+      "note": "L'annexe écrit « Rien » en S1-1 : lu comme « toute valeur » (limitation au plus légère)."
+    },
+    {
+      "code": "saturation_bases",
+      "label": "Saturation en bases",
+      "category": "f",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            35,
+            100
+          ]
+        ],
+        "S1-1": [
+          [
+            20,
+            35
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            20
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "ponderation_25cm"
+    },
+    {
+      "code": "carbone_organique",
+      "label": "Carbone organique",
+      "category": "f",
+      "kind": "numerique_croissant",
+      "bounds": {
+        "S1-0": [
+          [
+            1.5,
+            null
+          ]
+        ],
+        "S1-1": [
+          [
+            0.8,
+            1.5
+          ]
+        ],
+        "S2": [
+          [
+            null,
+            0.8
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "haute",
+      "unit": "%",
+      "depthRule": "0_15cm"
+    },
+    {
+      "code": "ph",
+      "label": "pH de surface",
+      "category": "f",
+      "kind": "numerique_optimum",
+      "bounds": {
+        "S1-0": [
+          [
+            5.5,
+            6.5
+          ]
+        ],
+        "S1-1": [
+          [
+            5.2,
+            5.5
+          ],
+          [
+            6.5,
+            7.0
+          ]
+        ],
+        "S2": [
+          [
+            4.8,
+            5.2
+          ],
+          [
+            7.0,
+            7.6
+          ]
+        ],
+        "S3": [
+          [
+            4.5,
+            4.8
+          ],
+          [
+            7.6,
+            8.2
+          ]
+        ],
+        "N2": [
+          [
+            null,
+            4.0
+          ],
+          [
+            8.0,
+            null
+          ]
+        ]
+      },
+      "correctable": true,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "depthRule": "0_30cm",
+      "note": "Trou entre 4,0 et 4,5 (N1 vide) et chevauchement 8,0-8,2 entre S3 et N2 : valeurs à vérifier."
+    },
+    {
+      "code": "ece",
+      "label": "ECe",
+      "category": "n",
+      "kind": "numerique_decroissant",
+      "bounds": {
+        "S1-0": [
+          [
+            0,
+            1
+          ]
+        ],
+        "S1-1": [
+          [
+            1,
+            2
+          ]
+        ],
+        "S2": [
+          [
+            2,
+            3
+          ]
+        ],
+        "S3": [
+          [
+            3,
+            4
+          ]
+        ],
+        "N1": [
+          [
+            4,
+            6
+          ]
+        ],
+        "N2": [
+          [
+            6,
+            null
+          ]
+        ]
+      },
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "moyenne",
+      "unit": "mmhos/cm",
+      "depthRule": "moyenne_0_100",
+      "note": "L'annexe fusionne ECe et ESP sur une seule ligne ; ces valeurs sont attribuées à ECe."
+    },
+    {
+      "code": "esp",
+      "label": "ESP",
+      "category": "n",
+      "kind": "numerique_decroissant",
+      "bounds": null,
+      "correctable": false,
+      "source": "Annexe 11",
+      "confidence": "faible",
+      "unit": "%",
+      "depthRule": "max_0_100",
+      "note": "Valeurs absentes (ligne fusionnée avec ECe)."
+    }
+  ],
+  "conventions": "Convention : [a, null] = supérieur à a ; [null, b] = inférieur à b."
+}

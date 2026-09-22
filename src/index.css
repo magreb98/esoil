@@ -1,0 +1,178 @@
+@import "tailwindcss";
+/* Sous-ensembles latin + latin étendu (suffisant pour le français, incl. œ/Œ) — évite de
+   précacher les variantes cyrillique/grecque/vietnamienne inutiles en mode hors ligne. */
+@import "@fontsource/fira-sans/latin-400.css";
+@import "@fontsource/fira-sans/latin-500.css";
+@import "@fontsource/fira-sans/latin-600.css";
+@import "@fontsource/fira-sans/latin-700.css";
+@import "@fontsource/fira-sans/latin-ext-400.css";
+@import "@fontsource/fira-sans/latin-ext-500.css";
+@import "@fontsource/fira-sans/latin-ext-600.css";
+@import "@fontsource/fira-sans/latin-ext-700.css";
+@import "@fontsource/fira-code/latin-400.css";
+@import "@fontsource/fira-code/latin-500.css";
+@import "@fontsource/fira-code/latin-600.css";
+@import "@fontsource/fira-code/latin-ext-400.css";
+@import "@fontsource/fira-code/latin-ext-500.css";
+@import "@fontsource/fira-code/latin-ext-600.css";
+
+/*
+  Direction artistique (§12) : lisible dehors d'abord — thème clair à fort contraste par
+  défaut, thème sombre en option. Accent terre (terracotta) + végétal (vert profond).
+  Couleurs sémantiques des degrés de limitation (0-4) constantes dans les deux thèmes,
+  toujours doublées du code et d'une icône (jamais la couleur seule).
+*/
+:root {
+  --color-bg: #fdfbf7;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-foreground: #1a1815;
+  --color-foreground-muted: #57534e;
+  --color-border: #e4ddd0;
+  --color-border-strong: #cbc0ac;
+
+  --color-terracotta: #b4502a;
+  --color-terracotta-hover: #963f1e;
+  --color-terracotta-soft: #f5e3d8;
+  --color-vegetal: #1f5d3a;
+  --color-vegetal-hover: #164529;
+  --color-vegetal-soft: #dfeee3;
+
+  --color-ring: #1f5d3a;
+
+  --degree-0: #2f7d46;
+  --degree-0-bg: #e3f3e6;
+  --degree-1: #6b9c3f;
+  --degree-1-bg: #edf5df;
+  --degree-2: #b8860b;
+  --degree-2-bg: #faf1d6;
+  --degree-3: #c96a1f;
+  --degree-3-bg: #fbe7d4;
+  --degree-4: #b6392f;
+  --degree-4-bg: #fadedb;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-8: 48px;
+
+  --font-sans: 'Fira Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, Consolas, monospace;
+
+  color-scheme: light;
+}
+
+:root:not([data-theme="light"]) {
+  @media (prefers-color-scheme: dark) {
+    --color-bg: #14181a;
+    --color-surface: #1c2124;
+    --color-surface-raised: #232a2d;
+    --color-foreground: #f3f1ea;
+    --color-foreground-muted: #a8a297;
+    --color-border: #313a3d;
+    --color-border-strong: #414d51;
+
+    --color-terracotta: #d97a4e;
+    --color-terracotta-hover: #e5926c;
+    --color-terracotta-soft: #3a2620;
+    --color-vegetal: #4c9d6e;
+    --color-vegetal-hover: #66b585;
+    --color-vegetal-soft: #1b3327;
+
+    --color-ring: #4c9d6e;
+
+    --degree-0: #4fae6a;
+    --degree-0-bg: #16301f;
+    --degree-1: #93c15c;
+    --degree-1-bg: #26301a;
+    --degree-2: #d9ad3a;
+    --degree-2-bg: #362b12;
+    --degree-3: #e2913f;
+    --degree-3-bg: #3a2712;
+    --degree-4: #e2635a;
+    --degree-4-bg: #3a1815;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #14181a;
+  --color-surface: #1c2124;
+  --color-surface-raised: #232a2d;
+  --color-foreground: #f3f1ea;
+  --color-foreground-muted: #a8a297;
+  --color-border: #313a3d;
+  --color-border-strong: #414d51;
+
+  --color-terracotta: #d97a4e;
+  --color-terracotta-hover: #e5926c;
+  --color-terracotta-soft: #3a2620;
+  --color-vegetal: #4c9d6e;
+  --color-vegetal-hover: #66b585;
+  --color-vegetal-soft: #1b3327;
+
+  --color-ring: #4c9d6e;
+
+  --degree-0: #4fae6a;
+  --degree-0-bg: #16301f;
+  --degree-1: #93c15c;
+  --degree-1-bg: #26301a;
+  --degree-2: #d9ad3a;
+  --degree-2-bg: #362b12;
+  --degree-3: #e2913f;
+  --degree-3-bg: #3a2712;
+  --degree-4: #e2635a;
+  --degree-4-bg: #3a1815;
+
+  color-scheme: dark;
+}
+
+@theme {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-foreground: var(--color-foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--color-bg);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+.tabular-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

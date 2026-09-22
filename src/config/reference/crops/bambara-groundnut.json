@@ -1,0 +1,13 @@
+{
+  "code": "bambara_groundnut",
+  "name": "Voandzou",
+  "scientificName": "Vigna subterranea",
+  "lifecycle": "annuelle",
+  "correctionFactorGroup": "legumineuses",
+  "source": "Évalué dans GWETH (2024), tableaux 19 à 22, mais tables d'exigences absentes des annexes",
+  "verificationStatus": "manquant",
+  "climateRequirements": [],
+  "soilRequirements": [],
+  "note": "Aptitude non calculable tant que les tables d'exigences ne sont pas fournies. Le rendement (tableau 7, « Bambara grndnut ») est disponible. Recherche complémentaire (2026-09-22) : aucune table d'exigences façon Sys (S1-0/S1-1/S2/S3/N1/N2, valeurs paramétriques 0-100) trouvée pour cette culture dans la littérature accessible. Une source existe mais n'est PAS directement réutilisable ici : Nhamo, L. (2022) 'Optimal production areas of underutilized indigenous crops... Focus on Bambara groundnut', Frontiers in Sustainable Food Systems, https://doi.org/10.3389/fsufs.2022.990213, Table 2 — algorithme sud-africain (ARC Land Type Survey) à 4 classes (S1/S2/S3/N, pas 6) avec des seuils propres : pente 0-4/4-8/8-20/>20 %, pluviométrie saison (nov-avr) 550-750/450-550/350-450/(>750 ou <350) mm, température moyenne (nov-avr) 20-28/jusqu'à 32/32-35 °C, argile en surface environ 15-25/25-30/30-40/>40 %. Ce n'est ni la méthode paramétrique de Sys (échelle et agrégation différentes), ni un contexte agroécologique camerounais : l'utiliser tel quel produirait des classes non comparables au reste de l'application. Conservé ici comme piste de recherche, pas comme donnée intégrée — aucun `bounds` n'est rempli à partir de cette source.",
+  "conventions": "Convention : [a, null] = supérieur à a ; [null, b] = inférieur à b."
+}

@@ -1,0 +1,137 @@
+{
+  "app": {
+    "name": "eSoil",
+    "tagline": "Évaluation des terres FAO — méthode Sys / Beernaert & Bitondo"
+  },
+  "nav": {
+    "projects": "Projets",
+    "site": "Site",
+    "profiles": "Profils & horizons",
+    "soilDiagnosis": "Diagnostic pédologique",
+    "climateDiagnosis": "Diagnostic climatique",
+    "cropEvaluation": "Évaluation d'une culture",
+    "potential": "Aptitude potentielle",
+    "yields": "Rendements",
+    "matrix": "Matrice",
+    "exports": "Exports",
+    "glossary": "Glossaire et méthode"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "back": "Retour",
+    "export": "Exporter",
+    "import": "Importer",
+    "search": "Rechercher",
+    "noData": "Aucune donnée",
+    "loading": "Chargement…",
+    "source": "Source",
+    "seeGlossary": "Voir le glossaire",
+    "provisionalResult": "Résultat provisoire",
+    "theoreticalEstimate": "Estimation théorique FAO",
+    "missingData": "Donnée manquante",
+    "darkMode": "Thème sombre",
+    "lightMode": "Thème clair"
+  },
+  "projects": {
+    "title": "Projets",
+    "newProject": "Nouveau projet",
+    "sites": "sites",
+    "searchPlaceholder": "Rechercher un projet ou un site…",
+    "exportProject": "Exporter le projet",
+    "importProject": "Importer un projet",
+    "empty": "Aucun projet pour l'instant. Créez-en un pour commencer."
+  },
+  "site": {
+    "title": "Site",
+    "name": "Nom du site",
+    "location": "Localisation",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "altitude": "Altitude (m)",
+    "useGps": "Utiliser le GPS de l'appareil",
+    "climate": "Climat",
+    "importNasaPower": "Importer un CSV NASA POWER",
+    "manualEntry": "Saisie manuelle des 12 mois",
+    "methodParameters": "Paramètres de la méthode",
+    "etpSource": "Source de l'ETP",
+    "waterHoldingCapacity": "Réserve utile (mm)",
+    "slopeScale": "Échelle de pente par défaut"
+  },
+  "profile": {
+    "title": "Profils et horizons",
+    "newProfile": "Nouveau profil",
+    "soilUnit": "Unité de sol",
+    "slope": "Pente (%)",
+    "drainage": "Classe de drainage",
+    "flooding": "Classe d'inondation",
+    "effectiveDepth": "Profondeur effective (cm)",
+    "horizons": "Horizons",
+    "newHorizon": "Nouvel horizon",
+    "qualityAlerts": "Alertes de qualité",
+    "noAlerts": "Aucune alerte"
+  },
+  "soilDiagnosis": {
+    "title": "Diagnostic pédologique",
+    "texture": "Classe de texture Sys",
+    "depthRuleApplied": "Règle de profondeur appliquée",
+    "appreciation": "Appréciation"
+  },
+  "climateDiagnosis": {
+    "title": "Diagnostic climatique",
+    "growingPeriod": "Période de croissance",
+    "dryMonths": "Mois secs",
+    "waterBalance": "Bilan hydrique",
+    "thornthwaiteDetail": "Détail du calcul de Thornthwaite",
+    "insolation": "Insolation n/N"
+  },
+  "cropEvaluation": {
+    "title": "Évaluation d'une culture",
+    "selectCrop": "Choisir une culture",
+    "climateTable": "Tableau climat",
+    "soilTable": "Tableau sol",
+    "threeMethods": "Les trois méthodes",
+    "lowestClass": "Plus basse classe",
+    "numberIntensity": "Nombre et intensité",
+    "parametric": "Paramétrique",
+    "chain": "Chaîne de calcul CI → CR → IS → IT → classe",
+    "disagreement": "Désaccord entre méthodes",
+    "missingCriteria": "Critères non évalués"
+  },
+  "potential": {
+    "title": "Aptitude potentielle et scénarios",
+    "selectCorrections": "Corrections à appliquer",
+    "managementLevel": "Niveau d'intrants",
+    "sowingDate": "Date de semis",
+    "currentVsPotential": "Actuel vs potentiel"
+  },
+  "yields": {
+    "title": "Rendements",
+    "highInputRange": "Fourchette (intrants élevés, table 7)",
+    "correctionFactor": "Facteur de correction",
+    "current": "Actuel",
+    "potential": "Potentiel"
+  },
+  "matrix": {
+    "title": "Matrice",
+    "site": "Site",
+    "crop": "Culture",
+    "class": "Classe",
+    "landIndex": "Indice de terre"
+  },
+  "exports": {
+    "title": "Exports",
+    "faoTables": "Tableaux au format FAO",
+    "pdfReport": "Rapport PDF technique",
+    "jsonExport": "Export JSON complet"
+  },
+  "glossary": {
+    "title": "Glossaire et méthode",
+    "classes": "Classes d'aptitude",
+    "categories": "Catégories de limitation",
+    "indices": "Indices"
+  }
+}

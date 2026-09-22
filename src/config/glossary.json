@@ -1,0 +1,60 @@
+{
+  "_source": "Land Evaluation Manual (Beernaert & Bitondo, 1993) — terminologie standard FAO (1976)",
+  "classes": {
+    "S1-0": { "label": "Hautement apte", "definition": "Aucune limitation significative pour la culture considérée. Rendement proche du potentiel maximal.", "page": "p.14" },
+    "S1-1": { "label": "Apte", "definition": "Limitations légères, faible réduction de rendement ou de rentabilité.", "page": "p.14" },
+    "S2": { "label": "Moyennement apte", "definition": "Limitations modérées, réduisant le rendement, la rentabilité ou exigeant des intrants supplémentaires.", "page": "p.14" },
+    "S3": { "label": "Marginalement apte", "definition": "Limitations sévères qui réduisent fortement le rendement ou augmentent significativement les intrants nécessaires.", "page": "p.14" },
+    "N1": { "label": "Actuellement inapte, corrigible", "definition": "Limitations très sévères mais surmontables par des aménagements (drainage, fertilisation, chaulage...).", "page": "p.14" },
+    "N2": { "label": "Définitivement inapte", "definition": "Limitations très sévères non corrigibles dans des conditions raisonnables (climat, profondeur...).", "page": "p.14" }
+  },
+  "notationPattern": {
+    "classeIntermediaire": { "label": "Classe intermédiaire (ex. S3/N)", "definition": "Résultat de la méthode paramétrique tombant entre deux bandes de l'indice de terre — classe officielle de la grille, pas une ambiguïté.", "page": "p.27" },
+    "sousClasse": { "label": "Sous-classe (ex. S3f)", "definition": "Lettre(s) de catégorie(s) qui atteignent la classe finale par la méthode de la plus basse classe.", "page": "p.24" }
+  },
+  "categories": {
+    "c": { "label": "Climat", "definition": "Précipitations, température, durée de la saison sèche, insolation." },
+    "t": { "label": "Topographie", "definition": "Pente et risques d'érosion associés." },
+    "w": { "label": "Humidité (drainage / inondation)", "definition": "Excès d'eau : drainage du sol et risque d'inondation." },
+    "s": { "label": "Sol physique", "definition": "Texture, profondeur, éléments grossiers, structure." },
+    "f": { "label": "Fertilité", "definition": "pH, matière organique, capacité d'échange, bases échangeables." },
+    "n": { "label": "Salinité / sodicité", "definition": "Conductivité électrique (ECe) et pourcentage de sodium échangeable (ESP)." }
+  },
+  "flooding": {
+    "F0": { "label": "Pas d'inondation", "definition": "Aucun risque d'inondation observé." },
+    "F1": { "label": "Inondation occasionnelle légère", "definition": "Risque faible, durée courte." },
+    "F2": { "label": "Inondation occasionnelle modérée", "definition": "Risque et durée modérés." },
+    "F3": { "label": "Inondation fréquente", "definition": "Risque élevé, impact significatif sur la culture." },
+    "F4": { "label": "Inondation permanente ou très fréquente", "definition": "Zone impropre à la plupart des cultures sans aménagement lourd." }
+  },
+  "drainage": {
+    "bon": { "label": "Bon", "definition": "Eau évacuée rapidement, pas d'excès d'humidité." },
+    "modere": { "label": "Modéré", "definition": "Évacuation satisfaisante avec ressuyage un peu plus lent." },
+    "imparfait": { "label": "Imparfait", "definition": "Le sol reste humide une partie notable de l'année." },
+    "pauvre_aere": { "label": "Pauvre, aéré", "definition": "Excès d'eau fréquent mais le profil garde une aération partielle." },
+    "pauvre_drainable": { "label": "Pauvre, drainable", "definition": "Excès d'eau important, correctible par drainage artificiel." },
+    "pauvre_non_drainable": { "label": "Pauvre, non drainable", "definition": "Excès d'eau important, non corrigible dans des conditions raisonnables." },
+    "tres_pauvre": { "label": "Très pauvre", "definition": "Sol saturé en eau la majeure partie de l'année." }
+  },
+  "textureSys": {
+    "_note": "Notation Sys (§4.3) : lettre(s) de texture USDA + suffixe de structure (s polyédrique, v vertique, m massive, o oxique).",
+    "C": { "label": "Argile", "definition": ">40% d'argile." },
+    "SiC": { "label": "Argile limoneuse", "definition": "Argile riche en limon." },
+    "SC": { "label": "Argile sableuse", "definition": "Argile riche en sable." },
+    "CL": { "label": "Argile limoneuse (loam argileux)", "definition": "Texture intermédiaire à dominante argileuse." },
+    "SiCL": { "label": "Argile limoneuse-limoneuse", "definition": "Texture argile limoneuse à dominante limoneuse." },
+    "SCL": { "label": "Argile sableuse-limoneuse", "definition": "Texture argile sableuse à dominante limoneuse." },
+    "L": { "label": "Limon (loam)", "definition": "Équilibre entre sable, limon et argile." },
+    "SiL": { "label": "Limon limoneux", "definition": "Limon à dominante de particules fines de limon." },
+    "Si": { "label": "Limon pur (silt)", "definition": ">80% de limon." },
+    "SL": { "label": "Limon sableux", "definition": "Limon à dominante sableuse." },
+    "LS": { "label": "Sable limoneux", "definition": "Sable avec fraction limoneuse/argileuse notable." },
+    "S": { "label": "Sable", "definition": ">85% de sable." }
+  },
+  "indices": {
+    "CI": { "label": "Indice climatique", "definition": "Produit des valeurs paramétriques minimales de chaque groupe climatique (eau, température, humidité de l'air, insolation).", "page": "p.26" },
+    "CR": { "label": "Taux climatique", "definition": "Conversion de l'indice climatique via la figure 1 du manuel.", "page": "p.26" },
+    "IS": { "label": "Indice de sol", "definition": "Produit des valeurs paramétriques des critères de sol (pH et saturation en bases comptés une seule fois, par leur minimum).", "page": "p.26" },
+    "IT": { "label": "Indice de terre", "definition": "IT = CR × IS / 100 — détermine la classe finale via la grille de la méthode paramétrique.", "page": "p.27" }
+  }
+}
