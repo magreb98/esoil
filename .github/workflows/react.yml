@@ -31,4 +31,4 @@
             username: ${{ secrets.FTP_USERNAME }}
             password: ${{ secrets.FTP_PASSWORD }}
             local-dir: ./dist/
-            server-dir: ${{ vars.FTP_SERVER_DIR || '/e-soil.agribantuph.com' }}
+            server-dir: ${{ vars.FTP_SERVER_DIR || '/e-soil.agribantuph.com/' }}
